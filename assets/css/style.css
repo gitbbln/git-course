@@ -15,7 +15,7 @@
   top:0px;
   left:0px;
   width: 250px;
-  background-color: #fff;
+  background-color: red;
   padding: 5px 10px 5px 10px;
   color: #000;
   border: 1px solid #888;
@@ -24,10 +24,13 @@
   box-sizing: ;
 }
 html {
-    font-size: 76.5%;
+    font-size: 56.5%;
     font-family: 'Courier New', Courier, monospace;
-    color: #333;
-    background: #777755 url(bg.png) repeat;
+    color: #3474c4;
+
+    /*color: red;*/
+    background: 		#999977,
+    url(bg.png) repeat;
 }
 html, body, #wrap {
     min-height: 100%;
@@ -47,6 +50,7 @@ html, body, #wrap {
     box-shadow: 0 1px 2px rgba(0, 0, 0, .2);
     border: 1px solid Gray;
     margin: 5px;
+
 }
 .button, button {
     text-shadow: 0 1px 1px rgba(0, 0, 0, .3);
@@ -57,6 +61,7 @@ html, body, #wrap {
     background-image: -o-linear-gradient(#ffffff, #eeeeee 1px, #cccccc);
     background-image: -ms-linear-gradient(#ffffff, #eeeeee 1px, #cccccc);
     background-image: linear-gradient(#ffffff, #eeeeee 1px, #cccccc);
+
 }
 .button:hover, button:hover {
     background: #dddddd;
@@ -82,17 +87,25 @@ body {
     word-wrap: break-word;
 }
 ::selection {
-    background: #b3d4fc;
+    background:#b3d4fc;
     text-shadow: none;
 }
 a {
     text-decoration: none;
+   color: #DDD7B9;
+
 }
 a:focus {
     outline: thin dotted;
 }
+.editor.selectionBackground{ color: #006B6B;}
+
+
 a:hover {
+    
+    color: coral;
     text-decoration: underline;
+background :#006B6B;   
 }
 p:first-letter {
     padding-left: 1rem;
@@ -133,7 +146,7 @@ header {
     color: #f4a460;
 }
 #container {
-    background: #ececec;
+    background: seagreen;
     padding: 2rem;
     border-radius: 5px;
     box-shadow: .0rem .5rem 1rem rgba(0, 0, 0, .3);
@@ -146,11 +159,18 @@ header {
     vertical-align: middle;
     display: inline-block;
 }
+nav {
+    background-color: #545040;
+}
 #wrap {
     padding-bottom: 8rem;
 }
 #topnav li {
-    background-color: #333333;
+        /*"editorGroupHeader.tabsBackground": "#999977",*/
+
+    background-color: #999977;/*Невыделенный цвет*/
+background-color: #777755;/*Выделенный цвет*/
+
     margin: .2rem;
     border-radius: 5px;
     border: 1px solid Black;
@@ -158,20 +178,24 @@ header {
     display: inline-block;
     vertical-align: top;
     position: relative;
+
 }
 #topnav li:hover {
-    background-color: #4f4f4f;
+    background-color: #777755;/*Выделенный цвет*/
+    background-color: #999977;/*Невыделенный цвет*/
 }
 #topnav li a {
     display: inline-block;
     padding: .5rem;
-    color: white;
     text-decoration: none;
     text-transform: uppercase;
     width: 100%;
+/*"activityBar.inactiveForeground": "#777755*/
+    /*color: #777755;*/
 }
 #topnav li ul {
     padding: 0;
+
 }
 h1, h2 {
     font-family: 'RuslanDisplay', Helvetica, Arial, Geneva, sans-serif;
@@ -233,6 +257,7 @@ footer {
     height: 2rem;
     background: transparent url(img/close.png) no-repeat center center;
 }
+ 
 .red {
     color: red;
 }

@@ -80,10 +80,5 @@ $(document).ready(function(e){
 			}
 		});
 	}
-	if($('#show_atom').length>0){
-		// прелоадер картинок
-		aBanners = [{'src':host + 'upload/3-VSEROD_TABL_RU_1024x768_WEB.jpg',},{'src':host + 'upload/3-VSEROD_TABL_EN_1024x768_WEB.jpg'}];
-		$('#show_atom').before('<div id="mainSlider"></div><div class="switch-wrap"></div>');
-		loadScript('js/slider.js',true);
-	}
+	
 });
